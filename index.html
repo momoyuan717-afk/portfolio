@@ -300,6 +300,47 @@
     .footer-logo { font-size: 12px; color: var(--gray-4); letter-spacing: 2px; }
     .footer-copy { font-size: 11px; color: var(--gray-4); }
 
+    /* ── 新职业经历卡片 ── */
+    .career-list { display: flex; flex-direction: column; gap: 20px; }
+    .career-card {
+      display: grid; grid-template-columns: 220px 1fr;
+      gap: 0;
+      background: #fff;
+      border: 1px solid var(--gray-3);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+    .career-card:hover { box-shadow: 0 6px 24px rgba(59,130,246,0.08); }
+    .career-left {
+      background: var(--gray-1);
+      border-right: 1px solid var(--gray-3);
+      padding: 24px 20px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .career-period { font-size: 11px; color: var(--gray-5); letter-spacing: 0.05em; }
+    .career-co { font-size: 18px; font-weight: 700; color: var(--dark); margin: 4px 0 2px; }
+    .career-role { font-size: 12px; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
+    .career-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .ctag {
+      font-size: 10.5px; font-weight: 600;
+      color: var(--accent); background: #eff6ff;
+      border: 1px solid #dbeafe;
+      border-radius: 20px; padding: 3px 9px;
+    }
+    .career-right { padding: 24px 24px; }
+    .career-output { display: flex; flex-direction: column; gap: 14px; }
+    .co-item { display: flex; gap: 12px; align-items: flex-start; }
+    .co-label {
+      flex-shrink: 0; min-width: 70px;
+      font-size: 11px; font-weight: 700;
+      color: #fff; background: var(--accent);
+      border-radius: 4px; padding: 2px 8px;
+      letter-spacing: 0.05em; margin-top: 1px;
+    }
+    .co-text { font-size: 13px; line-height: 1.65; color: var(--gray-6); }
+    .co-text strong { color: var(--dark); }
+
     /* ── 品牌墙 ── */
     .brand-wall { margin-top: 28px; }
     .brand-wall-label {
@@ -486,90 +527,159 @@
   <div class="sec-title">职业经历</div>
   <div class="sec-desc">每一段经历都在拓宽「整合」的边界</div>
 
-  <div class="timeline">
+  <div class="career-list">
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-period" data-editable>2025.03 — 至今</div>
-      <div class="tl-co" data-editable>小红书</div>
-      <div class="tl-role" data-editable>商业化 · 汽车行业品牌营销</div>
-      <ul class="tl-points">
-        <li data-editable>操盘 <strong>小米SU7/YU7、极氪007GT/7X、智己L6/LS6</strong> 等头部车型上市传播策略，实现搜索+116%、阅读+141%，新势力赛道阅读TOP1</li>
-        <li data-editable>主导行业营销方法论专项（TTT），输出汽车行业白皮书并在平台官方号对外发布</li>
-        <li data-editable>多次统筹品牌T2T高层对谈，完整负责议题设计与材料包装</li>
-      </ul>
-      <div class="tl-tags">
-        <span class="tl-tag">整合营销</span>
-        <span class="tl-tag">品牌策略</span>
-        <span class="tl-tag">平台侧操盘</span>
-        <span class="tl-tag">行业方法论</span>
+    <!-- 小红书 -->
+    <div class="career-card">
+      <div class="career-left">
+        <div class="career-period" data-editable>2025.03 — 至今</div>
+        <div class="career-co" data-editable>小红书</div>
+        <div class="career-role" data-editable>汽车行业品牌营销运营专家</div>
+        <div class="career-tags">
+          <span class="ctag">整合营销</span>
+          <span class="ctag">品牌策略</span>
+          <span class="ctag">车型传播</span>
+          <span class="ctag">IP大事件</span>
+          <span class="ctag">行业方法论</span>
+        </div>
+      </div>
+      <div class="career-right">
+        <div class="career-output">
+          <div class="co-item">
+            <div class="co-label">车型操盘</div>
+            <div class="co-text" data-editable>操盘小米SU7/YU7、极氪007GT/7X、智己L6/LS6等新势力头部车型上市传播，实现<strong>搜索+116%、阅读+141%</strong>，新势力赛道阅读稳居<strong>TOP1</strong></div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">IP与高端化</div>
+            <div class="co-text" data-editable>主导「高端化种草公式」方法论落地，联合舒淇代言IP高举高打，CTR最高<strong>16.22%</strong>，打造站内标志性高点事件</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">行业影响力</div>
+            <div class="co-text" data-editable>牵头行业营销方法论专项（TTT），输出汽车行业营销白皮书，多次统筹T2T品牌高层对谈，完整负责议题设计与材料包装</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-period" data-editable>2023.01 — 2024.05</div>
-      <div class="tl-co" data-editable>特斯拉</div>
-      <div class="tl-role" data-editable>社媒传播与用户运营</div>
-      <ul class="tl-points">
-        <li data-editable>从0搭建 <strong>400人、60+门店</strong> 主播矩阵，建立培训→考核→激励完整机制</li>
-        <li data-editable>连续 <strong>5个季度</strong> 全国线索、订单、爆款内容<strong>断层TOP1</strong></li>
-        <li data-editable>主导Cybertruck国内巡展、Model 3焕新版、Model Y改款等重点车型上市社媒传播</li>
-        <li data-editable>Tesla Life电商全链路运营，多场次无投流高GMV，超额100%完成目标</li>
-        <li data-editable>入职半年获评「星耀飞行员」，公司非销售岗首位</li>
-      </ul>
-      <div class="tl-tags">
-        <span class="tl-tag">矩阵搭建</span>
-        <span class="tl-tag">直播运营</span>
-        <span class="tl-tag">用户运营</span>
-        <span class="tl-tag">电商</span>
+    <!-- 字节跳动 -->
+    <div class="career-card">
+      <div class="career-left">
+        <div class="career-period" data-editable>待填充时间段</div>
+        <div class="career-co" data-editable>字节跳动</div>
+        <div class="career-role" data-editable>生活服务 · B端品牌传播</div>
+        <div class="career-tags">
+          <span class="ctag">B端营销</span>
+          <span class="ctag">品牌大事件</span>
+          <span class="ctag">政企资源</span>
+          <span class="ctag">行业媒体</span>
+        </div>
+      </div>
+      <div class="career-right">
+        <div class="career-output">
+          <div class="co-item">
+            <div class="co-label">营销大事件</div>
+            <div class="co-text" data-editable>操盘B端品牌营销峰会、创作者大会等行业级大事件，形成行业影响力，带动商机线索增长</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">资源生态</div>
+            <div class="co-text" data-editable>拓展行业机构媒体、高校、政府资源，构建多方传播背书体系，放大品牌信任度</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">爆款内容</div>
+            <div class="co-text" data-editable>搭建B端特色营销案例库，结合冬季购物节、新消费节等节点打造出圈爆款内容，带动本地特色经营增长</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-period" data-editable>待填充时间段</div>
-      <div class="tl-co" data-editable>字节跳动</div>
-      <div class="tl-role" data-editable>B端品牌传播（待填充具体岗位）</div>
-      <ul class="tl-points">
-        <li data-editable>待你提供经历细节后完善</li>
-      </ul>
-      <div class="tl-tags">
-        <span class="tl-tag">B端营销</span>
-        <span class="tl-tag">品牌建设</span>
+    <!-- 特斯拉 -->
+    <div class="career-card">
+      <div class="career-left">
+        <div class="career-period" data-editable>2023.01 — 2024.05</div>
+        <div class="career-co" data-editable>特斯拉</div>
+        <div class="career-role" data-editable>社媒传播与用户运营</div>
+        <div class="career-tags">
+          <span class="ctag">矩阵从0搭建</span>
+          <span class="ctag">直播运营</span>
+          <span class="ctag">用户运营</span>
+          <span class="ctag">电商</span>
+          <span class="ctag">车型上市</span>
+        </div>
+      </div>
+      <div class="career-right">
+        <div class="career-output">
+          <div class="co-item">
+            <div class="co-label">矩阵搭建</div>
+            <div class="co-text" data-editable>从0搭建<strong>400人、60+门店</strong>主播矩阵，建立完整的培训→考核→激励机制，连续<strong>5个季度</strong>全国线索断层<strong>TOP1</strong></div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">车型传播</div>
+            <div class="co-text" data-editable>主导Cybertruck巡展、Model 3焕新版、Model Y改款等重点车型上市社媒战役，多场次无投流高GMV，超额<strong>100%</strong>完成目标</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">个人荣誉</div>
+            <div class="co-text" data-editable>入职半年获评「星耀飞行员」，公司<strong>非销售岗首位</strong></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-period" data-editable>2021.05 — 2022.10</div>
-      <div class="tl-co" data-editable>腾讯游戏</div>
-      <div class="tl-role" data-editable>数字与品牌生态营销</div>
-      <ul class="tl-points">
-        <li data-editable>联合非遗资源（苏绣、宋锦）推出游戏皮肤，登上社媒热搜，年度商业化 <strong>TOP1</strong>，获官媒报道</li>
-        <li data-editable>搭建达人+主播+校园立体化触达体系，低成本规模化可复制增长</li>
-        <li data-editable>推动国家级科研公益项目落地，拓展政企资源</li>
-      </ul>
-      <div class="tl-tags">
-        <span class="tl-tag">跨界营销</span>
-        <span class="tl-tag">KOL运营</span>
-        <span class="tl-tag">本地化策略</span>
+    <!-- 腾讯游戏 -->
+    <div class="career-card">
+      <div class="career-left">
+        <div class="career-period" data-editable>2021.05 — 2022.10</div>
+        <div class="career-co" data-editable>腾讯游戏</div>
+        <div class="career-role" data-editable>品牌生态与跨界营销</div>
+        <div class="career-tags">
+          <span class="ctag">跨界联名</span>
+          <span class="ctag">文化营销</span>
+          <span class="ctag">非遗合作</span>
+          <span class="ctag">政企资源</span>
+          <span class="ctag">KOL运营</span>
+        </div>
+      </div>
+      <div class="career-right">
+        <div class="career-output">
+          <div class="co-item">
+            <div class="co-label">跨界联名</div>
+            <div class="co-text" data-editable>主导王者荣耀「荣耀中国节」跨界合作——七夕×苏绣国家级非遗、中秋×五地月饼非遗大师、英雄联盟×金陵非遗，登上社媒热搜，年度商业化<strong>TOP1</strong>，获官媒报道</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">多游联动</div>
+            <div class="co-text" data-editable>同步操盘天龙八部、英雄联盟等多款游戏与地方文化区域非遗IP的深度结合，拓展政府与文旅资源</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">增长体系</div>
+            <div class="co-text" data-editable>搭建达人+主播+校园三角立体触达体系，低成本规模化可复制增长</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-period" data-editable>2017.06 — 2021.02</div>
-      <div class="tl-co" data-editable>绿地商业集团</div>
-      <div class="tl-role" data-editable>管培生（市场研究 / 品牌策略 / 商业体运营）</div>
-      <ul class="tl-points">
-        <li data-editable>参与产业地产项目可行性分析、市场定位与产业规划，输出对外合作白皮书</li>
-        <li data-editable>主导新零售业态从概念到落地全链路，覆盖策划→选品→线下运营</li>
-      </ul>
-      <div class="tl-tags">
-        <span class="tl-tag">商业策略</span>
-        <span class="tl-tag">新零售</span>
-        <span class="tl-tag">市场研究</span>
+    <!-- 绿地 -->
+    <div class="career-card">
+      <div class="career-left">
+        <div class="career-period" data-editable>2017.06 — 2021.02</div>
+        <div class="career-co" data-editable>绿地商业集团</div>
+        <div class="career-role" data-editable>管培生（市场研究 / 品牌策略 / 商业体运营）</div>
+        <div class="career-tags">
+          <span class="ctag">商业策略</span>
+          <span class="ctag">市场研究</span>
+          <span class="ctag">新零售</span>
+          <span class="ctag">产业规划</span>
+        </div>
+      </div>
+      <div class="career-right">
+        <div class="career-output">
+          <div class="co-item">
+            <div class="co-label">产业研究</div>
+            <div class="co-text" data-editable>参与产业地产项目可行性分析、市场定位与产业规划，输出对外合作白皮书</div>
+          </div>
+          <div class="co-item">
+            <div class="co-label">新零售落地</div>
+            <div class="co-text" data-editable>主导新零售业态从概念到落地全链路，覆盖策划→选品→线下运营</div>
+          </div>
+        </div>
       </div>
     </div>
 
