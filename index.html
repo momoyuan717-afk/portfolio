@@ -300,6 +300,23 @@
     .footer-logo { font-size: 12px; color: var(--gray-4); letter-spacing: 2px; }
     .footer-copy { font-size: 11px; color: var(--gray-4); }
 
+    /* ── 品牌墙 ── */
+    .brand-wall { margin-top: 28px; }
+    .brand-wall-label {
+      font-size: 9.5px; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gray-4); margin-bottom: 14px;
+    }
+    .brand-logos { display: flex; flex-wrap: wrap; gap: 10px; }
+    .brand-item { display: flex; flex-direction: column; align-items: center; gap: 5px; cursor: default; }
+    .brand-logo {
+      width: 44px; height: 44px; border-radius: 10px;
+      border: 1px solid var(--gray-3); overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .brand-item:hover .brand-logo { border-color: var(--accent); transform: translateY(-2px); }
+    .brand-item span { font-size: 9.5px; color: var(--gray-5); white-space: nowrap; }
+
     /* ══ 响应式 ══ */
     @media (max-width: 960px) {
       nav { padding: 14px 24px; }
@@ -417,6 +434,45 @@
         <div>
           <div class="about-card-title">从0到1的操盘基因</div>
           <div class="about-card-text">矩阵搭建、方法论制定、体系建设，习惯在空白处走出路</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 合作品牌 -->
+    <div class="brand-wall">
+      <div class="brand-wall-label">合作 / 服务过的品牌</div>
+      <div class="brand-logos">
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#161823"/><text x="22" y="28" text-anchor="middle" font-size="10" font-weight="800" fill="white" font-family="Arial">字节</text></svg></div>
+          <span>字节跳动</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#CC0000"/><text x="22" y="30" text-anchor="middle" font-size="22" font-weight="900" fill="white" font-family="Arial">T</text></svg></div>
+          <span>特斯拉</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#1DA462"/><text x="22" y="29" text-anchor="middle" font-size="13" font-weight="800" fill="white" font-family="Arial">腾讯</text></svg></div>
+          <span>腾讯游戏</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#FF6900"/><text x="22" y="29" text-anchor="middle" font-size="13" font-weight="800" fill="white" font-family="Arial">MI</text></svg></div>
+          <span>小米汽车</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#FF4C00"/><text x="22" y="24" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="Arial">POP</text><text x="22" y="35" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="Arial">MART</text></svg></div>
+          <span>泡泡玛特</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#2D2D2D"/><text x="22" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A96E" font-family="Arial">Man</text><text x="22" y="36" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A96E" font-family="Arial">ner</text></svg></div>
+          <span>Manner</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#000"/><text x="22" y="29" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="Arial">ZEEKR</text></svg></div>
+          <span>极氪</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo"><svg viewBox="0 0 44 44" width="44" height="44"><rect width="44" height="44" rx="9" fill="#2D3A8C"/><text x="22" y="29" text-anchor="middle" font-size="13" font-weight="700" fill="white" font-family="Arial">IM</text></svg></div>
+          <span>智己</span>
         </div>
       </div>
     </div>
