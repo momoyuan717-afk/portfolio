@@ -95,9 +95,7 @@
     }
     .hero-avatar img { width: 100%; height: 100%; object-fit: cover; }
     .hero-avatar-overlay {
-      position: absolute; inset: 0; background: rgba(0,0,0,0.45);
-      color: white; font-size: 10px;
-      display: flex; align-items: center; justify-content: center;
+      display: none;
       border-radius: 50%; opacity: 0; transition: opacity 0.2s;
     }
     .hero-avatar:hover .hero-avatar-overlay { opacity: 1; }
@@ -414,11 +412,9 @@
   <div class="intro-left">
     <div class="hero-eyebrow">Brand · Content · Growth</div>
 
-    <div class="hero-avatar" id="heroAvatar" onclick="document.getElementById('avatarUpload').click()" title="点击上传头像">
-      <span id="avatarText">袁</span>
-      <div class="hero-avatar-overlay">更换头像</div>
+    <div class="hero-avatar">
+      <img src="https://momoyuan717-afk.github.io/portfolio/images/avatar.jpg" alt="袁梦">
     </div>
-    <input type="file" id="avatarUpload" accept="image/*" style="display:none">
 
     <h1 class="hero-name">
       <span class="en">Yuan Meng</span>
