@@ -370,6 +370,26 @@
       .case-card.featured { grid-column: span 1; }
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
       footer { padding: 18px 24px; flex-direction: column; gap: 6px; text-align: center; }
+      /* 职业经历卡片移动端 */
+      .career-card { grid-template-columns: 1fr; }
+      .career-left { border-right: none; border-bottom: 1px solid var(--gray-3); }
+      /* 项目卡片移动端 */
+      .cases-grid { grid-template-columns: 1fr !important; }
+      /* 能力图谱移动端 */
+      .skills-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 600px) {
+      .hero-stats { flex-wrap: wrap; gap: 16px; }
+      .hero-stats .stat { flex: 0 0 calc(50% - 8px); }
+      .about-cards { gap: 8px; }
+      .career-card { border-radius: 10px; }
+      .career-left { padding: 16px; }
+      .career-right { padding: 16px; }
+      .co-item { flex-direction: column; gap: 4px; }
+      .co-label { width: fit-content; }
+      .skills-grid { grid-template-columns: 1fr 1fr !important; }
+      .sec-title { font-size: 22px; }
+      .contact-info { flex-direction: column; align-items: center; gap: 12px; }
     }
   </style>
 </head>
